@@ -11,15 +11,14 @@
 @implementation DilateOperation
 
 - (void)processImage:(vImage_Buffer *)inputBuffer outputBuffer:(vImage_Buffer *)outputBuffer {
-    const unsigned char kernel[] = {1,1,1,1,1,1,1,1,1};
-    vImageDilate_ARGB8888(inputBuffer,
-                         outputBuffer,
-                         0,
-                         0,
-                         kernel,
-                         3,
-                         3,
-                         kvImageLeaveAlphaUnchanged);
+    vImageMax_ARGB8888(inputBuffer,
+                       outputBuffer,
+                       NULL,
+                       0,
+                       0,
+                       3,
+                       3,
+                       kvImageLeaveAlphaUnchanged);
 }
 
 @end

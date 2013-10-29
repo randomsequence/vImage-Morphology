@@ -1,4 +1,4 @@
 vImage-Morphology
 =================
 
-Example usage of vImageDilate_ARGB8888 &amp; vImageErode_ARGB8888 for iOS
+Example usage of vImageMax_ARGB8888 &amp; vImageMin_ARGB8888 for iOS

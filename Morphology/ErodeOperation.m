@@ -11,15 +11,14 @@
 @implementation ErodeOperation
 
 - (void)processImage:(vImage_Buffer *)inputBuffer outputBuffer:(vImage_Buffer *)outputBuffer {
-    const unsigned char kernel[] = {1,1,1,1,1,1,1,1,1};
-    vImageErode_ARGB8888(inputBuffer,
-                         outputBuffer,
-                         0,
-                         0,
-                         kernel,
-                         3,
-                         3,
-                         kvImageLeaveAlphaUnchanged);
+    vImageMin_ARGB8888(inputBuffer,
+                       outputBuffer,
+                       NULL,
+                       0,
+                       0,
+                       3,
+                       3,
+                       kvImageLeaveAlphaUnchanged);
 }
 
 @end
