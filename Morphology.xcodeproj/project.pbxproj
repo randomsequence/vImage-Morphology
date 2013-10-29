@@ -21,6 +21,9 @@
 		5B673BF318203D3C00D499CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B673BD518203D3C00D499CD /* UIKit.framework */; };
 		5B673BFB18203D3C00D499CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B673BF918203D3C00D499CD /* InfoPlist.strings */; };
 		5B673BFD18203D3C00D499CD /* MorphologyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B673BFC18203D3C00D499CD /* MorphologyTests.m */; };
+		5B673C081820446700D499CD /* ErodeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B673C071820446700D499CD /* ErodeOperation.m */; };
+		5B673C0B182044F700D499CD /* ImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B673C0A182044F700D499CD /* ImageOperation.m */; };
+		5B673C0E18205C2000D499CD /* DilateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B673C0D18205C2000D499CD /* DilateOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		5B673BF818203D3C00D499CD /* MorphologyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MorphologyTests-Info.plist"; sourceTree = "<group>"; };
 		5B673BFA18203D3C00D499CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B673BFC18203D3C00D499CD /* MorphologyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MorphologyTests.m; sourceTree = "<group>"; };
+		5B673C061820446700D499CD /* ErodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErodeOperation.h; sourceTree = "<group>"; };
+		5B673C071820446700D499CD /* ErodeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErodeOperation.m; sourceTree = "<group>"; };
+		5B673C09182044F700D499CD /* ImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageOperation.h; sourceTree = "<group>"; };
+		5B673C0A182044F700D499CD /* ImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageOperation.m; sourceTree = "<group>"; };
+		5B673C0C18205C2000D499CD /* DilateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DilateOperation.h; sourceTree = "<group>"; };
+		5B673C0D18205C2000D499CD /* DilateOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DilateOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,12 @@
 				5B673BE318203D3C00D499CD /* Main.storyboard */,
 				5B673BE618203D3C00D499CD /* ViewController.h */,
 				5B673BE718203D3C00D499CD /* ViewController.m */,
+				5B673C09182044F700D499CD /* ImageOperation.h */,
+				5B673C0A182044F700D499CD /* ImageOperation.m */,
+				5B673C061820446700D499CD /* ErodeOperation.h */,
+				5B673C071820446700D499CD /* ErodeOperation.m */,
+				5B673C0C18205C2000D499CD /* DilateOperation.h */,
+				5B673C0D18205C2000D499CD /* DilateOperation.m */,
 				5B673BE918203D3C00D499CD /* Images.xcassets */,
 				5B673BD818203D3C00D499CD /* Supporting Files */,
 			);
@@ -249,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B673C0E18205C2000D499CD /* DilateOperation.m in Sources */,
 				5B673BE818203D3C00D499CD /* ViewController.m in Sources */,
 				5B673BE218203D3C00D499CD /* AppDelegate.m in Sources */,
 				5B673BDE18203D3C00D499CD /* main.m in Sources */,
+				5B673C081820446700D499CD /* ErodeOperation.m in Sources */,
+				5B673C0B182044F700D499CD /* ImageOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
